@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Block Function practice</title>
+    </head>
+    <body>
+        <button onclick="console.log(fnSayHello())" id = "clickme">CLICK</button>
+        <br/>
+        <button onclick="alert(fnPlusNum(3, 5))">3 + 5 = ?</button>
+        <button onclick="alert(fnMinusNum(3, 5))">3 - 5 = ?</button>
+        <br/>
+    </body>
+    <script>
+        function fnSayHello() {
+            document.querySelector('#clickme').innerHTML = "Say, Hello~!"
+        }
+        function fnPlusNum(pNum1, pNum2){
+            return pNum1 + pNum2;
+        }
+        const fnMinusNum = function(pNum1, pNum2){
+            return pNum1 - pNum2;
+        };
+
+    </script>
+</html>

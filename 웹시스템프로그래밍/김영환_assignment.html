@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <h1>Please enter a number within the range of 1 to 100</h1>
+        <br>
+        <input id="num" type = "text" size="15">
+        <button  onclick = "checkNumber(getElementById('num').value)">check</button>
+        <br><br>
+        Result:<br><br>
+        <form>
+            <textarea rows = "7" cols = "40" wrap="virtual" id="output"></textarea>
+        </form>
+
+    </body>
+    <script>
+        
+        function checkNumber(num) {
+           
+           if(num <= 100 && num >= 1){
+               document.getElementById("output").innerText = "success";
+           }
+           else {
+               document.getElementById("output").innerText = "Input range is not correct";
+           }
+        }
+    </script>
+</html>

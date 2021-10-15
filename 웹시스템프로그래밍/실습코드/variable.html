@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Block Scope Practice</title>
+</head>
+<body>
+
+</body>
+<script>
+    {
+        let apple =3;
+        console.log(apple); //output the 3
+        apple = 5;  //le declaration variable is allowed to be reallocation
+        console.log(apple); //output the 5
+        let apple = 7;
+
+        const car;
+        const carName = "BMW";
+        console.log(carName);
+        carName = "Benz";
+    }
+    console.log(apple);
+    console.log(carName);
+</script>
+</html>

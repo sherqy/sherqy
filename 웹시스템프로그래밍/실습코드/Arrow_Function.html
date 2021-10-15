@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Arrow Function Practice</title>
+    </head>
+<body>
+    <button onclick="
+    console.log(fnStyle);
+    console.log('1+2=', fnPlusNum1(1,2));
+    console.log('2+3=', fnPlusNum2(2,3));
+    console.log('3+4=', fnPlusNum3(3,4));
+    console.log('4+1=', fnPlusNum4(4));
+    " id="clickme">Arrow Function Execution</button>
+</body>
+<script>
+    const fnPlusNum1 = function (pNum1, pNum2){
+        return pNum1 + pNum2;
+    }
+    const fnPlusNum2 = (pNum1, pNum2) => {
+        return pNum1 + pNum2;
+    }
+    const fnPlusNum3 = (pNum1, pNum2) => pNum1 + pNum2;
+    const fnPlusNum4 = pNum => pNum+1;
+    const fnStyle = () => "Hello, Nice to meet you!";
+</script>
+</html>

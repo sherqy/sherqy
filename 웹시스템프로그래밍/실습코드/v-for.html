@@ -1,0 +1,39 @@
+<html>
+    <meta charset = "utf-8">
+    <head>
+
+    </head>
+
+    <body>
+        <div id = "app">
+            <ul v-for="(item, index) in aPersons">
+                <li>
+                    <p>NUMBER: {{ index }}</p>
+                    <p>NAME: {{ item.name }}</p>
+                    <p>AGE: {{ item.age }}</p>
+                </li>
+            </ul> 
+        </div>
+        <script src = "https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    aPersons: [{
+                        name: 'Chris',
+                        age: 27
+                    },
+                    {
+                        name: 'Mina',
+                        age: 30
+                    },
+                    {
+                        name: 'James',
+                        age: 40
+                    }
+                ]
+                }
+            });
+        </script>
+    </body>
+</html>
